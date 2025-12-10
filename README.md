@@ -20,7 +20,7 @@ Na primeira etapa da simulação, o sistema foi executado sem proteções (`sync
 **Resultado Obtido:**
 Observa-se abaixo que múltiplos agentes entraram na verificação de disponibilidade ao mesmo tempo. O **Agente 2** conseguiu efetuar uma compra mesmo quando o saldo já era zero, levando o sistema a um estado inconsistente de **-1 assento**.
 
-![Erro de Overbooking](imagem/imagem_poo)
+![Erro de Overbooking](imagem/imagem_poo.png)
 *(Print do console mostrando a Race Condition e venda excedente)*
 
 ---
@@ -56,4 +56,4 @@ Após as correções, o sistema comporta-se de maneira estável. O **Semáforo**
 2.  Agentes excedentes aguardam (`WAIT`) em vez de gerar erro.
 3.  O Cancelamento libera vagas e os agentes em espera completam a compra.
 
-![Execução Correta](imagem/imagem_correta)
+![Execução Correta](imagem/imagem_correta.png)
